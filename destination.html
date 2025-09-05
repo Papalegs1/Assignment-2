@@ -1,0 +1,220 @@
+
+<!-- Extra Features
+    Background = Working
+    Favicon = Not working
+    List bullet = Working
+    tool tips = Working
+     -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Travelogue: Petra</title>
+  <link rel="icon" href="favicon.jpeg" type="image/jpeg" />
+
+  <style>
+    :root {
+      --accent: #b5651d;
+      --ink: #222;
+      --muted: #666;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    body {
+      background-image: url("background.jpeg");
+      background-repeat: repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 24px;
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+      color: var(--accent);
+    }
+
+    h2 {
+      margin-top: 28px;
+      font-size: 1.35rem;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ol, ul {
+      padding-left: 22px;
+    }
+
+    figure {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    figure img {
+      width: 400px;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    figcaption {
+      margin-top: 8px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    blockquote {
+      margin: 22px 0;
+      padding: 12px 16px;
+      border-left: 4px solid var(--accent);
+      background: #fff3e8;
+      border-radius: 6px;
+      font-style: italic;
+    }
+
+    nav {
+      margin: 16px 0 28px;
+    }
+
+    nav a {
+      color: var(--accent);
+      font-weight: 600;
+      margin-right: 14px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    ul.tips {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul.tips li {
+      position: relative;
+      padding-left: 32px;
+      margin: 8px 0;
+    }
+
+    ul.tips li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 20px;
+      height: 20px;
+      background: url("bullet.jpg") no-repeat center center;
+      background-size: cover;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .back-home {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 8px 16px;
+      background: var(--accent);
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-home:hover {
+      background: #8b4513;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Travelogue: Petra</h1>
+      <p>Join me, James Wilds, on an unforgettable journey to Petra—the ancient "Rose City" of Jordan, known for its stunning rock-cut architecture and fascinating history.</p>
+      <nav>
+        <a href="#intro">Intro</a>
+        <a href="#must-see">Must-See Spots</a>
+        <a href="#tips">Visitor Tips</a>
+        <a href="#gallery">Gallery</a>
+      </nav>
+    </header>
+
+    <section id="intro">
+      <h2>Why Petra?</h2>
+      <p>Petra is a UNESCO World Heritage site and one of the New Seven Wonders of the World. Once a bustling trading hub of the Nabateans, its structures were carved directly into vibrant red sandstone cliffs.</p>
+      <p>Today, Petra offers a unique window into the past while providing breathtaking hiking routes and photographic opportunities. Walking through its towering rock formations feels like stepping into another era.</p>
+      <blockquote>“A rose-red city half as old as time.” — John William Burgon</blockquote>
+    </section>
+
+    <section id="must-see">
+      <h2>Must-See Spots</h2>
+      <ol>
+        <li title="Iconic façade carved in the 1st century BCE">
+          <strong>Al-Khazneh (The Treasury):</strong> The most famous landmark of Petra, with intricate carvings. Arrive early to avoid crowds and catch the morning light illuminating the façade.
+        </li>
+        <li title="1.2 km sandstone gorge leading into Petra">
+          <strong>The Siq:</strong> A stunning natural gorge that serves as the main entrance to Petra. The narrow passage builds anticipation until the Treasury comes into view.
+        </li>
+        <li title="Monastery atop a long staircase">
+          <strong>Ad-Deir (The Monastery):</strong> A challenging climb of nearly 800 steps leads to this monumental structure. The panoramic views at the top are worth the effort.
+        </li>
+      </ol>
+    </section>
+
+    <section id="tips">
+      <h2>Visitor Tips</h2>
+      <ul class="tips">
+        <li><strong>Arrive early:</strong> Petra opens at 6 AM—be there early to enjoy the serene beauty before tour groups arrive.</li>
+        <li><strong>Wear proper footwear:</strong> Expect a lot of walking and climbing. Sturdy shoes will make your journey comfortable and safe.</li>
+        <li><strong>Stay hydrated:</strong> The desert sun can be intense, so bring plenty of water and sunscreen.</li>
+        <li><strong>Hire a local guide:</strong> Guides provide deep insights into the history and culture of Petra that you might miss on your own.</li>
+      </ul>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <figure>
+        <img src="treasury.jpeg" alt="The Treasury at Petra at sunrise">
+        <figcaption>The Treasury glowing in the morning sun.</figcaption>
+      </figure>
+      <figure>
+        <img src="Siq.jpeg" alt="The Siq leading to Petra">
+        <figcaption>The narrow passageway of the Siq.</figcaption>
+      </figure>
+      <figure>
+        <img src="monastary.jpeg" alt="The Monastery on top of the hill">
+        <figcaption>Stunning views from the Monastery's viewpoint.</figcaption>
+      </figure>
+    </section>
+
+    <footer>
+      <p>© 2025 James Wilds. All rights reserved.</p>
+      <a href="index.html" class="back-home">← Back to Home</a>
+    </footer>
+  </main>
+</body>
+</html>
